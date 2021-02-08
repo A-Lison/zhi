@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+</head>
+
+<body>
+    <table align="center" border="1" cellpadding="5" cellspacing="0" width="300" height="100">
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+            <!-- colspan是跨列合并  合并后需删除多余单元格-->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <!-- rowspan是跨行合并 -->
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+/* CSS文件里只有样式，没有标签 */
+
+div {
+    color: rgb(195, 0, 255);
+    font-family: 楷体;
+}

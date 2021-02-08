@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* a:link 未访问的链接，把没有点击过（访问过）的链接选择出来 */
+        
+        a:link {
+            color: black;
+        }
+        /* a:visited 选择点击过（访问过）的链接出来 */
+        
+        a:visited {
+            color: rgb(255, 238, 0);
+        }
+        /* a:hover 选择鼠标经过的链接 */
+        
+        a:hover {
+            color: skyblue;
+        }
+        /* a:active 选择鼠标按下却没有弹起的链接 */
+        
+        a:active {
+            color: green;
+        }
+        /* 注：为确保生效，链接按照LVHA的顺序书写
+        链接一般会默认显示样式，所以要单独给a改style */
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+    <a href="http://www.baidu.com/">熊出没</a>
+    <a href="http://xxxxxx.com/">weizhiwangzhang</a>
+
+</body>
+
+</html>

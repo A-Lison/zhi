@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS字体属性</title>
+    <style>
+        h3 {
+            /* font-style: normal 浏览器默认字体展示风格（不倾斜） italic 倾斜;  
+            font-size: 字体大小 单位px;
+            font-weight: 字体粗细 加粗是700或者bold 不加粗是400或者normal 无单位; */
+            /* font-style: italic;
+            font-family: '瘦金体', 楷体, 仿宋, Courier, monospace; */
+            font: italic 400 30px '瘦金体', 楷体, 仿宋, Courier, monospace;
+        }
+        
+        p {
+            font-weight: 500;
+            font-size: 20px;
+            font-family: '瘦金体', 楷体, 仿宋, Courier, monospace;
+            /* 复合属性：简写的方式
+            font: font-style font-weight font-size/line-height font-family;
+            注：空格隔开 必须保留font-size和font-family属性，否则font属性不起作用 */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>《诗经：白华》</h3>
+    <p>白华菅兮，白茅束兮</p>
+    <p>之子之远，俾我独兮</p>
+    <p>英英白云，露彼菅茅</p>
+    <p>天步艰难，之子不犹</p>
+</body>
+
+</html>

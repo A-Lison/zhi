@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <!-- 为什么需要清除浮动？
+    1.父级元素没有高度
+    2.子盒子浮动
+    3.影响下面的布局 -->
+    <style>
+        .fa {
+            margin: 0 auto;
+            padding: 0;
+            width: 600px;
+            border: 1px solid blueviolet;
+            /* <2>给父级元素添加overflow: hidden,auto,scoll;
+            overflow: hidden; */
+        }
+        /* <3>添加after伪元素
+            .clearfix:after {
+                content: "";
+                display: block;
+                height: 0;
+                clear: both;
+            }
+            .clearfix:after {
+                *zocm: 1;
+            }
+        */
+        /* <4>给父元素添加双伪元素 
+        .clearfix::before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .clearfix {
+            *zocm: 1;
+        } */
+        
+        .damao {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: cadetblue;
+        }
+        
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+        }
+        /*<1> 额外标签法 */
+        
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fa clearfix">
+        <div class="damao">da</div>
+        <div class="ermao">er</div>
+        <div class="clear"></div>
+    </div>
+    <!-- 额外标签法 注：只能是块级元素 -->
+    <div style="background-color: coral;width: 600px;height: 200px;margin: 0 auto;"></div>
+</body>
+
+</html>
